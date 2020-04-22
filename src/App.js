@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 // 导入组件
 import Index from "./page/Home/index";
 import CityList from "./page/CityList";
@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path="/home" component={Index} />
           <Route path="/cityList" component={CityList} />
-
+          <Route exact path="/" render={() => <Redirect to="/home" />} />
           {/* 404页面 */}
           <Route component={Fn404} />
         </Switch>
