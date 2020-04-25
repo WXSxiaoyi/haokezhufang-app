@@ -8,7 +8,7 @@ import House from "../House/index";
 import Index from "../Index/index";
 import Profile from "../Profile/index";
 // 导入样式
-import './index.css'
+import './index.scss'
 // 导入数据
 import tabBarConfig from '../../utils/tabBarConfig'
 
