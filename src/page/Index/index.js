@@ -19,7 +19,7 @@ class Index extends React.Component {
     isPlay: false,
     keyword: '',
     currCity: {
-      label: '--',
+      label: '北京',
       value: ''
     }
   }

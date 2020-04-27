@@ -1,7 +1,7 @@
 import React from "react";
 
 import './index.scss'
-import {NavBar} from "antd-mobile";
+import {Icon, NavBar} from "antd-mobile";
 
 /*
 * 地图找房
@@ -29,7 +29,8 @@ class Map extends React.Component{
       <div className={'mapBox'}>
         {/*导航条*/}
         <NavBar
-          mode="light"
+          mode="dark"
+          icon={<Icon type={'left'} />}
           onLeftClick={() => {
             this.props.history.goBack()
           }}
